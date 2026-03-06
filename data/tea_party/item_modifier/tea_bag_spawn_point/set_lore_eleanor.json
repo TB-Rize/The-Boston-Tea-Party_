@@ -1,0 +1,23 @@
+{
+  "function": "minecraft:set_lore",
+  "entity": "this",
+  "lore": [
+    {
+      "text": "",
+      "extra": [
+        {
+          "text": "エレノア号に必要な最低設置数 : ",
+          "color": "aqua"
+        },
+        {
+          "storage": "tea_party:",
+          "nbt": "tea_bags.count.eleanor",
+          "source": "storage",
+          "color": "aqua"
+        }
+      ]
+    }
+  ],
+  "mode": "replace_section",
+  "offset": 1
+}

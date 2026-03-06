@@ -1,0 +1,81 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:golden_horse_armor",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "text": "探偵への調査依頼書",
+                "color": "gold",
+                "bold": true
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:lore": [
+                  {
+                    "text": "",
+                    "extra": [
+                      {
+                        "text": "右クリック",
+                        "color": "yellow"
+                      },
+                      {
+                        "text": "することで調査メニューを開ける",
+                        "color": "aqua"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "",
+                    "extra": [
+                      {
+                        "text": "30秒以内に依頼しなかった場合アイテムが帰ってくる",
+                        "color": "red"
+                      }
+                    ]
+                  },
+                  "",
+                  "",
+                  {
+                    "text": "",
+                    "extra": [
+                      {
+                        "text": "The Boston Tea Party",
+                        "color": "gold"
+                      }
+                    ]
+                  }
+                ],
+                "minecraft:max_stack_size": 1,
+                "minecraft:custom_data": {
+                  "tea.itemID": "detectiveForm",
+                  "tea.banOffHand": true
+                },
+                "minecraft:consumable": {
+                  "consume_seconds": 0,
+                  "sound": "minecraft:ui.loom.take_result",
+                  "has_consume_particles": false
+                },
+                "minecraft:item_model": "minecraft:flower_banner_pattern",
+                "!minecraft:equippable": {},
+                "!minecraft:attribute_modifiers": {},
+                "minecraft:use_cooldown": {
+                  "seconds": 2,
+                  "cooldown_group": "detective_form"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

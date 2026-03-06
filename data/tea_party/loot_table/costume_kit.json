@@ -1,0 +1,102 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_horse_armor",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "text": "強襲用変装(没)",
+                "color": "yellow"
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                "",
+                {
+                  "text": "",
+                  "extra": [
+                    {
+                      "text": "変装して身元が割れないようにする",
+                      "color": "aqua"
+                    }
+                  ]
+                },
+                {
+                  "text": "",
+                  "extra": [
+                    {
+                      "text": "右クリック",
+                      "color": "yellow"
+                    },
+                    {
+                      "text": "で衣装に着替え、茶葉用ロープを得る",
+                      "color": "aqua"
+                    }
+                  ]
+                },
+                {
+                  "text": "",
+                  "extra": [
+                    {
+                      "text": "3分程度で衣装はボロボロになってしまう",
+                      "color": "red"
+                    }
+                  ]
+                },
+                {
+                  "text": "※史実的に言うと本当はほぼ裸である",
+                  "color": "gray"
+                },
+                "",
+                {
+                  "text": "",
+                  "extra": [
+                    {
+                      "text": "The Boston Tea Party",
+                      "color": "gold"
+                    }
+                  ]
+                }
+              ],
+              "mode": "append"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 1,
+                "minecraft:custom_data": {
+                  "tea.itemID": "costume_kit",
+                  "tea.items": true
+                },
+                "minecraft:consumable": {
+                  "consume_seconds": 0,
+                  "animation": "none",
+                  "sound": {
+                    "sound_id": ""
+                  },
+                  "has_consume_particles": true,
+                  "on_consume_effects": []
+                },
+                "!minecraft:equippable": {},
+                "!minecraft:attribute_modifiers": {},
+                "minecraft:item_model": "minecraft:leather_chestplate",
+                "minecraft:use_cooldown": {
+                  "seconds": 1
+                }
+              },
+              "conditions": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

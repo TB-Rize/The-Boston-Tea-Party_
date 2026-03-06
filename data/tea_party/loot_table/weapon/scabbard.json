@@ -1,0 +1,81 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:golden_horse_armor",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "text": "暗殺刀(納刀)",
+                "color": "red",
+                "bold": true
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:lore": [
+                  {
+                    "text": "",
+                    "extra": [
+                      {
+                        "text": "右クリック",
+                        "color": "yellow"
+                      },
+                      {
+                        "text": "することで鞘から短刀を取り出す",
+                        "color": "aqua"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "",
+                    "extra": [
+                      {
+                        "text": "30秒以内に人を斬らなかった場合鞘に戻る",
+                        "color": "red"
+                      }
+                    ]
+                  },
+                  "",
+                  "",
+                  {
+                    "text": "",
+                    "extra": [
+                      {
+                        "text": "The Boston Tea Party",
+                        "color": "gold"
+                      }
+                    ]
+                  }
+                ],
+                "minecraft:max_stack_size": 1,
+                "minecraft:custom_data": {
+                  "tea.itemID": "scabbard",
+                  "tea.banOffHand": true
+                },
+                "minecraft:consumable": {
+                  "consume_seconds": 0,
+                  "sound": "minecraft:item.armor.equip_chain",
+                  "has_consume_particles": false
+                },
+                "minecraft:item_model": "minecraft:wooden_sword",
+                "!minecraft:equippable": {},
+                "!minecraft:attribute_modifiers": {},
+                "minecraft:use_cooldown": {
+                  "seconds": 180,
+                  "cooldown_group": "knifes"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

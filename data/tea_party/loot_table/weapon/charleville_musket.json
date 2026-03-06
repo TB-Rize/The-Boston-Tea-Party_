@@ -1,0 +1,106 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_horse_armor",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "text": "",
+                "extra": [
+                  {
+                    "text": "Charleville muskets",
+                    "color": "gold",
+                    "bold": true,
+                    "italic": true
+                  },
+                  {
+                    "text": " (未装填)",
+                    "color": "red",
+                    "bold": true
+                  }
+                ]
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                "",
+                {
+                  "text": "",
+                  "extra": [
+                    {
+                      "text": "アメリカ独立戦争時に使用されたマスケット銃",
+                      "color": "red"
+                    }
+                  ]
+                },
+                {
+                  "text": "",
+                  "extra": [
+                    {
+                      "text": "右クリック",
+                      "color": "yellow"
+                    },
+                    {
+                      "text": "で発射 スニークでリロード",
+                      "color": "aqua"
+                    }
+                  ]
+                },
+                {
+                  "text": "",
+                  "extra": [
+                    {
+                      "text": "状態 : リロード待ち",
+                      "color": "green"
+                    }
+                  ]
+                },
+                "",
+                "",
+                {
+                  "text": "",
+                  "extra": [
+                    {
+                      "text": "The Boston Tea Party",
+                      "color": "gold"
+                    }
+                  ]
+                }
+              ],
+              "mode": "append"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 1,
+                "minecraft:custom_data": {
+                  "tea.itemID": "muskets",
+                  "tea.items": true,
+                  "tea.gunType": "Charleville",
+                  "tea.banOffHand": true,
+                  "tea.muskets_reload_num": 0
+                },
+                "minecraft:consumable": {
+                  "consume_seconds": 2147483647,
+                  "animation": "none"
+                },
+                "!minecraft:equippable": {},
+                "!minecraft:attribute_modifiers": {},
+                "minecraft:item_model": "minecraft:iron_horse_armor"
+              },
+              "conditions": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

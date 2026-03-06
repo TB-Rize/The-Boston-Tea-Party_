@@ -1,0 +1,20 @@
+{
+  "function": "minecraft:set_name",
+  "entity": "this",
+  "name": {
+    "text": "",
+    "extra": [
+      {
+        "text": "Brown Bess",
+        "color": "gold",
+        "bold": true,
+        "italic": true
+      },
+      {
+        "text": "(装填済み)",
+        "color": "blue",
+        "bold": true
+      }
+    ]
+  }
+}

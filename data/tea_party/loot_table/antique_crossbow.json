@@ -1,0 +1,82 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:crossbow",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "text": "古びたクロスボウ",
+                "color": "light_purple",
+                "bold": true
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:lore": [
+                  {
+                    "text": "",
+                    "extra": [
+                      {
+                        "text": "廃倉庫で見つかった中古のクロスボウ",
+                        "color": "yellow"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "",
+                    "extra": [
+                      {
+                        "text": "かなりボロボロで一発しか打てなさそうだ",
+                        "color": "gray"
+                      }
+                    ]
+                  },
+                  "",
+                  "",
+                  {
+                    "text": "",
+                    "extra": [
+                      {
+                        "text": "The Boston Tea Party",
+                        "color": "gold"
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": {
+                "tea.itemID": "antique_crossbow",
+                "tea.items": true
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:charged_projectiles": [
+                  {
+                    "id": "minecraft:arrow",
+                    "components": {
+                      "minecraft:custom_name": "古びた矢"
+                    },
+                    "count": 1
+                  }
+                ],
+                "minecraft:damage": 465
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

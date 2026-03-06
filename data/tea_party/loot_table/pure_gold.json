@@ -1,0 +1,80 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:golden_horse_armor",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "text": "24K純金インゴット(調整中)",
+                "color": "gold",
+                "bold": true
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:lore": [
+                  {
+                    "text": "",
+                    "extra": [
+                      {
+                        "text": "この時代に素人が持っちゃいけないもの",
+                        "color": "yellow"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "",
+                    "extra": [
+                      {
+                        "text": "凄まじい価値を持つ",
+                        "color": "light_purple"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "",
+                    "extra": [
+                      {
+                        "text": "工作員がこれを使用するとサンズオブリバティを一人買収できる予定",
+                        "color": "blue"
+                      }
+                    ]
+                  },
+                  "",
+                  "",
+                  {
+                    "text": "",
+                    "extra": [
+                      {
+                        "text": "The Boston Tea Party",
+                        "color": "gold"
+                      }
+                    ]
+                  }
+                ],
+                "minecraft:max_stack_size": 1,
+                "minecraft:custom_data": {
+                  "tea.itemID": "pure_gold",
+                  "pure_gold": true
+                },
+                "minecraft:consumable": {
+                  "consume_seconds": 0
+                },
+                "minecraft:item_model": "minecraft:gold_ingot",
+                "!minecraft:equippable": {},
+                "!minecraft:attribute_modifiers": {}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

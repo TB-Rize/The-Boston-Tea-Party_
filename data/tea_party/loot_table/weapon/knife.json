@@ -1,0 +1,80 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_sword",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "text": "暗殺刀(抜刀)",
+                "color": "red",
+                "bold": true
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:lore": [
+                  {
+                    "text": "",
+                    "extra": [
+                      {
+                        "text": "抜刀した",
+                        "color": "red"
+                      },
+                      {
+                        "text": "　早く殺せ",
+                        "color": "dark_red"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "",
+                    "extra": [
+                      {
+                        "text": "抜刀後、左クリックで対象を斬る",
+                        "color": "red"
+                      }
+                    ]
+                  },
+                  "",
+                  "",
+                  {
+                    "text": "",
+                    "extra": [
+                      {
+                        "text": "The Boston Tea Party",
+                        "color": "gold"
+                      }
+                    ]
+                  }
+                ],
+                "minecraft:max_stack_size": 1,
+                "minecraft:custom_data": {
+                  "tea.itemID": "knife",
+                  "tea.banOffHand": true
+                },
+                "minecraft:attribute_modifiers": [
+                  {
+                    "type": "minecraft:attack_damage",
+                    "id": "minecraft:",
+                    "amount": 1773,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  }
+                ],
+                "minecraft:damage": 249
+              },
+              "conditions": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

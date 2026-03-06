@@ -1,0 +1,95 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:armor_stand",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "text": "タスク4スポーン位置 ",
+                "color": "green",
+                "bold": true
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:lore": [
+                  {
+                    "text": "",
+                    "extra": [
+                      {
+                        "text": "タスク4の荷物が湧く場所を設置する",
+                        "color": "yellow"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "",
+                    "extra": [
+                      {
+                        "text": "",
+                        "color": "aqua"
+                      }
+                    ]
+                  },
+                  "",
+                  "",
+                  {
+                    "text": "",
+                    "extra": [
+                      {
+                        "text": "The Boston Tea Party",
+                        "color": "gold"
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": {
+                "tea.spawn_task": true,
+                "tea.task_id": 4
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:entity_data": {
+                  "id": "minecraft:armor_stand",
+                  "NoGravity": true,
+                  "Invulnerable": true,
+                  "CustomName": {
+                    "text": "タスク4 スポーン位置",
+                    "color": "yellow"
+                  },
+                  "CustomNameVisible": true,
+                  "Tags": [
+                    "tea.task_spawner",
+                    "tea.task4",
+                    "tea.armor_stand"
+                  ],
+                  "attributes": [
+                    {
+                      "id": "minecraft:scale",
+                      "base": 0.4,
+                      "modifiers": []
+                    }
+                  ],
+                  "Invisible": false
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

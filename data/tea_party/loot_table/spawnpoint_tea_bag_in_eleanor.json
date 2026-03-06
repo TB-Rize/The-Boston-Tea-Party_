@@ -1,0 +1,93 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:armor_stand",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "text": "茶葉置き場　エレノア号",
+                "color": "green",
+                "bold": true
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:lore": [
+                  {
+                    "text": "",
+                    "extra": [
+                      {
+                        "text": "エレノア号に設置される茶葉置き場候補地点",
+                        "color": "yellow"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "",
+                    "extra": [
+                      {
+                        "text": "エレノア号に必要な最低設置数 : null",
+                        "color": "aqua"
+                      }
+                    ]
+                  },
+                  "",
+                  "",
+                  {
+                    "text": "",
+                    "extra": [
+                      {
+                        "text": "The Boston Tea Party",
+                        "color": "gold"
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{tea.spawn_eleanor:1b,tea.tea_bag_spawner:1b}"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:entity_data": {
+                  "id": "minecraft:armor_stand",
+                  "NoGravity": true,
+                  "Invulnerable": true,
+                  "CustomName": {
+                    "text": "エレノア号　茶葉スポーン位置",
+                    "color": "yellow"
+                  },
+                  "CustomNameVisible": true,
+                  "Tags": [
+                    "tea.tea_bag_spawner",
+                    "tea.spawn_eleanor",
+                    "tea.armor_stand",
+                    "tea.id_unassigned"
+                  ],
+                  "attributes": [
+                    {
+                      "id": "minecraft:scale",
+                      "base": 0.4,
+                      "modifiers": []
+                    }
+                  ],
+                  "Invisible": false
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

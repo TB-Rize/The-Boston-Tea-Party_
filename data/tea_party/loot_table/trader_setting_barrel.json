@@ -1,0 +1,104 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:armor_stand",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "text": "商人取引設定樽の設置",
+                "color": "light_purple",
+                "bold": true
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:lore": [
+                  {
+                    "text": "",
+                    "extra": [
+                      {
+                        "text": "商人取引設定用樽を設置する",
+                        "color": "yellow"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "※一つしか置けません",
+                    "color": "red"
+                  },
+                  {
+                    "text": "",
+                    "extra": [
+                      {
+                        "text": "",
+                        "color": "dark_red"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "破壊するときは防具立てを壊してください",
+                    "color": "yellow"
+                  },
+                  {
+                    "text": "この防具立てを破壊すると樽も破壊されます",
+                    "color": "red"
+                  },
+                  "",
+                  "",
+                  {
+                    "text": "",
+                    "extra": [
+                      {
+                        "text": "The Boston Tea Party",
+                        "color": "gold"
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{tea.trader_spawner:1b}"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:entity_data": {
+                  "id": "minecraft:armor_stand",
+                  "NoGravity": true,
+                  "Invulnerable": true,
+                  "CustomName": {
+                    "text": "商人取引設定樽",
+                    "color": "red"
+                  },
+                  "CustomNameVisible": true,
+                  "Tags": [
+                    "tea.trader_setting",
+                    "tea.armor_stand",
+                    "tea.trader_setting_unallowed"
+                  ],
+                  "attributes": [
+                    {
+                      "id": "minecraft:scale",
+                      "base": 1.4,
+                      "modifiers": []
+                    }
+                  ],
+                  "Invisible": false
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

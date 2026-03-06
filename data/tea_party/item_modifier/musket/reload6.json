@@ -1,0 +1,24 @@
+[
+  {
+    "function": "minecraft:set_custom_data",
+    "tag": {
+      "tea.muskets_reload_num": 6
+    }
+  },
+  {
+    "function": "minecraft:set_lore",
+    "lore": [
+      {
+        "text": "",
+        "extra": [
+          {
+            "text": "状態 : 込め矢での押し込み完了",
+            "color": "green"
+          }
+        ]
+      }
+    ],
+    "mode": "replace_section",
+    "offset": 3
+  }
+]

@@ -1,0 +1,80 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:cooked_beef",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "text": "",
+                "extra": [
+                  {
+                    "text": "美味しそうな焼き立てステーキ",
+                    "color": "gold",
+                    "bold": true,
+                    "italic": true
+                  }
+                ]
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                "",
+                {
+                  "text": "",
+                  "extra": [
+                    {
+                      "text": "ボリューミーでジューシーな厚切りステーキ",
+                      "color": "gold"
+                    }
+                  ]
+                },
+                {
+                  "text": "",
+                  "extra": [
+                    {
+                      "text": "とっても美味しい！😋",
+                      "color": "yellow"
+                    }
+                  ]
+                },
+                "",
+                "",
+                {
+                  "text": "",
+                  "extra": [
+                    {
+                      "text": "The Boston Tea Party Joke Items",
+                      "color": "gold"
+                    }
+                  ]
+                }
+              ],
+              "mode": "append"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 80,
+                "minecraft:custom_data": {
+                  "tea.itemID": "steak",
+                  "tea.items": true
+                },
+                "!minecraft:equippable": {},
+                "!minecraft:attribute_modifiers": {}
+              },
+              "conditions": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

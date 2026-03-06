@@ -1,0 +1,39 @@
+[
+  {
+    "function": "minecraft:set_custom_data",
+    "tag": {
+      "tea.muskets_reload_num": 0
+    }
+  },
+  {
+    "function": "minecraft:set_name",
+    "entity": "this",
+    "name": {
+      "text": "",
+      "extra": [
+        {
+          "text": "Brown Bess",
+          "color": "gold",
+          "bold": true,
+          "italic": true
+        },
+        {
+          "text": "(未装填)",
+          "color": "red",
+          "bold": true
+        }
+      ]
+    }
+  },
+  {
+    "function": "minecraft:set_lore",
+    "lore": [
+      {
+        "text": "状態 : リロード待ち",
+        "color": "green"
+      }
+    ],
+    "mode": "replace_section",
+    "offset": 3
+  }
+]

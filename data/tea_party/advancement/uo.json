@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "components": {
+            "minecraft:custom_data": {
+              "tea.itemID": "uo"
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "tea_party:advancement/uo"
+  }
+}

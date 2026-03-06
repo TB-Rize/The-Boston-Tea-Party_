@@ -1,0 +1,91 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:golden_horse_armor",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "text": "タスク用荷物掴みロープ",
+                "color": "yellow"
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                "",
+                {
+                  "text": "",
+                  "extra": [
+                    {
+                      "text": "倉庫整理で荷物を掴むために必要なロープ",
+                      "color": "aqua"
+                    }
+                  ]
+                },
+                {
+                  "text": "",
+                  "extra": [
+                    {
+                      "text": "右クリック",
+                      "color": "yellow"
+                    },
+                    {
+                      "text": "で近くの荷物をひとつ掴む",
+                      "color": "aqua"
+                    }
+                  ]
+                },
+                {
+                  "text": "",
+                  "extra": [
+                    {
+                      "text": "手から離すと荷物は落ちてしまう",
+                      "color": "red"
+                    }
+                  ]
+                },
+                "",
+                "",
+                {
+                  "text": "",
+                  "extra": [
+                    {
+                      "text": "The Boston Tea Party",
+                      "color": "gold"
+                    }
+                  ]
+                }
+              ],
+              "mode": "append"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 1,
+                "minecraft:custom_data": {
+                  "tea.itemID": "task_rope",
+                  "tea.items": true
+                },
+                "minecraft:consumable": {
+                  "consume_seconds": 2147483647,
+                  "animation": "none"
+                },
+                "!minecraft:equippable": {},
+                "!minecraft:attribute_modifiers": {},
+                "minecraft:item_model": "minecraft:lead"
+              },
+              "conditions": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

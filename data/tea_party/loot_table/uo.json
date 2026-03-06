@@ -1,0 +1,61 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:golden_horse_armor",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "text": "冷笑アイス🍨",
+                "color": "aqua",
+                "bold": true
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:lore": [
+                  {
+                    "text": "",
+                    "extra": [
+                      {
+                        "text": "うお（笑）",
+                        "color": "yellow"
+                      }
+                    ]
+                  },
+                  "",
+                  "",
+                  {
+                    "text": "",
+                    "extra": [
+                      {
+                        "text": "Not The Boston Tea Party",
+                        "color": "gold"
+                      }
+                    ]
+                  }
+                ],
+                "minecraft:max_stack_size": 1,
+                "minecraft:custom_data": {
+                  "tea.itemID": "uo"
+                },
+                "minecraft:consumable": {
+                  "consume_seconds": 0
+                },
+                "minecraft:item_model": "minecraft:blue_ice",
+                "!minecraft:equippable": {},
+                "!minecraft:attribute_modifiers": {}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

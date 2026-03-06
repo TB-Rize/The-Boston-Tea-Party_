@@ -1,0 +1,82 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:armor_stand",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "text": "商人のスポーン位置",
+                "color": "green",
+                "bold": true
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:lore": [
+                  {
+                    "text": "",
+                    "extra": [
+                      {
+                        "text": "商人がスポーンする場所を設置する",
+                        "color": "yellow"
+                      }
+                    ]
+                  },
+                  "",
+                  "",
+                  {
+                    "text": "",
+                    "extra": [
+                      {
+                        "text": "The Boston Tea Party",
+                        "color": "gold"
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{tea.trader_spawner:1b}"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:entity_data": {
+                  "id": "minecraft:armor_stand",
+                  "NoGravity": true,
+                  "Invulnerable": true,
+                  "CustomName": {
+                    "text": "商人スポーン位置",
+                    "color": "yellow"
+                  },
+                  "CustomNameVisible": true,
+                  "Tags": [
+                    "tea.trader_spawner",
+                    "tea.armor_stand"
+                  ],
+                  "attributes": [
+                    {
+                      "id": "minecraft:scale",
+                      "base": 0.8,
+                      "modifiers": []
+                    }
+                  ],
+                  "Invisible": false
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
