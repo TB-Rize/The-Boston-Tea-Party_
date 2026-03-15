@@ -17,6 +17,7 @@ function tea_party:entity/tasks/spawn/disclose
 # 茶葉や荷物を片づける
 function tea_party:entity/tea_bag/kill
 function tea_party:entity/tasks/kill
+function tea_party:entity/void_nexus/kill
 
 # 商人には死んでもらう
 execute as @e[tag=tea.trader] at @s run kill @s
