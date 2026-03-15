@@ -11,7 +11,7 @@
               "function": "minecraft:set_name",
               "entity": "this",
               "name": {
-                "text": "ヴォイドネクサス",
+                "text": "ヴォイドネクサスポータル",
                 "color": "light_purple",
                 "bold": true
               }
@@ -28,7 +28,7 @@
                         "color": "yellow"
                       },
                       {
-                        "text": "することでヴォイドネクサスを足元に設置",
+                        "text": "することでヴォイドネクサスへ移動",
                         "color": "aqua"
                       }
                     ]
@@ -37,8 +37,8 @@
                     "text": "",
                     "extra": [
                       {
-                        "text": "遠隔地からヴォイドネクサスに移動可能",
-                        "color": "red"
+                        "text": "～美しいヴォイドネクサスへ～",
+                        "color": "light_purple"
                       }
                     ]
                   },
@@ -56,7 +56,7 @@
                 ],
                 "minecraft:max_stack_size": 1,
                 "minecraft:custom_data": {
-                  "tea.itemID": "voidNexus",
+                  "tea.itemID": "voidNexusPortal",
                   "tea.banOffHand": true
                 },
                 "minecraft:consumable": {
@@ -64,12 +64,12 @@
                   "sound": "minecraft:ui.loom.take_result",
                   "has_consume_particles": false
                 },
-                "minecraft:item_model": "minecraft:calibrated_sculk_sensor",
+                "minecraft:item_model": "minecraft:sculk_sensor",
                 "!minecraft:equippable": {},
                 "!minecraft:attribute_modifiers": {},
                 "minecraft:use_cooldown": {
                   "seconds": 2,
-                  "cooldown_group": "void_nexus"
+                  "cooldown_group": "void_nexus_portal"
                 }
               }
             }
