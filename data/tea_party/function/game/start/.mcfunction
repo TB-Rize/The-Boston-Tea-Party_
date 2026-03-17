@@ -20,15 +20,6 @@ data modify storage tea_party: Ingame set value 1b
     tag @a remove tea.spectator
     tag @a[gamemode=spectator] add tea.spectator
 
-    # ロールアサインのためのスコアボードを用意する
-    scoreboard objectives remove tea.temp_int
-    scoreboard objectives add tea.temp_int dummy "紅茶：一時整数"
-
-    # 役職数を一時的に保存するスコアを一時整数に保存する
-    execute store result score #role_agent tea.temp_int run scoreboard players get #agent tea.use_role
-    execute store result score #role_special_agent tea.temp_int run scoreboard players get #special_agent tea.use_role
-    execute store result score #role_sam tea.temp_int run scoreboard players get #sam tea.use_role
-
     # 役職割り振り(観戦者には行われない)
     function tea_party:role/assign/
 
@@ -48,6 +39,9 @@ data modify storage tea_party: Ingame set value 1b
 
     # タスクロープ渡し
     loot give @a[gamemode=!spectator] loot tea_party:task_rope
+
+    # ヴォイドネクサス付与
+    loot give @a[scores={tea.role_num=24}] loot tea_party:other/void_nexus
 
 
 # 各種貨物のスポーン位置を隠す

@@ -7,8 +7,8 @@
 # ヴォイドネクサスを召喚
 function tea_party:item/other/void_nexus/summon
 
-# 仮で全員に配る　本来は座標データを刻む
-loot give @a loot tea_party:other/void_nexus_portal
+# 工作員陣営にPortalを配る　本来は座標データを刻む
+loot give @a[tag=tea.role_agent] loot tea_party:other/void_nexus_portal
 
 # 使ったので没収
 clear @s minecraft:golden_horse_armor[minecraft:custom_data~{tea.itemID:"voidNexus"}] 1
