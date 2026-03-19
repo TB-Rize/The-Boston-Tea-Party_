@@ -38,7 +38,7 @@
 
 
 # 役職割り振りが終わったのでtellrawやtitleを流す
-    # オ
+    # 工作員 id 1
     execute as @a[scores={tea.role_num=1}] run function tea_party:role/assign/tellraw_and_titles/agent
 
     # サンズオブリバティ id 101

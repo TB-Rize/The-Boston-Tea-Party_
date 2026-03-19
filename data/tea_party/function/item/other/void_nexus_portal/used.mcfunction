@@ -6,7 +6,7 @@
 tellraw @s {text:"ヴォイドネクサスへ移動する！",bold:true,italic:true,color:"light_purple"}
 
 # とりあえず雑テレポート
-tp @e[tag=tea.void_nexus_body,limit=1]
+tp @s @e[tag=tea.void_nexus_body,limit=1,sort=nearest]
 
 # 音を鳴らす
 execute at @s run playsound minecraft:block.respawn_anchor.deplete master @s ~ ~ ~ 0.5
