@@ -14,18 +14,17 @@ execute if data storage tea_party: {Ingame:1b} run return fail
 # manymany改行
 tellraw @s ["",{text:"\n"},{text:"\n"},{text:"\n"},{text:"\n"},{text:"\n"},{text:"\n"}]
 
-# 基礎役職数設定
-tellraw @s ["　 ",{text:"基礎役職数設定",bold:true,italic:true,color:"yellow"}]
-tellraw @s ["　 ",{text:" －",color:"dark_red",click_event:{action:"run_command",command:"/function tea_party:setting/role/tellraw/agent_decrease"}},{text:"  "},{score:{name:"#agent",objective:"tea.use_role"}},{text:"　＋",color:"aqua",click_event:{action:"run_command",command:"/function tea_party:setting/role/tellraw/agent_increase"}},{text:"　イギリス議会工作員 ",bold:true,italic:true,color:"dark_red"}]
-#tellraw @s ["",{text:" －",color:"dark_red",click_event:{action:"run_command",command:"/function tea_party:setting/role/tellraw/sol_decrease"}},{text:"  "},{score:{name:"#sons_of_liberty",objective:"tea.use_role"}},{text:"　＋",color:"aqua",click_event:{action:"run_command",command:"/function tea_party:setting/role/tellraw/sol_increase"}},{text:"　自由の息子たち: ソンズ・オブ・リバティ",color:"green"}]
-
-
-
-
 # コマンドを少し書き換える withで変数にする "ではなく 'をつかうこと
 # function tea_party:setting/role/tellraw/decrease {roleName:'役職名'}
 # function tea_party:setting/role/tellraw/increase {roleName:'役職名'}
 # 役職名リスト　サンズオブリバティ : sons_of_liberty ,工作員 : agent ,特殊工作員 : special_agent ,サミュエル・アダムズ : sam ,APEXオルター : alter
+
+
+# 基礎役職数設定
+tellraw @s ["　 ",{text:"基礎役職数設定",bold:true,italic:true,color:"yellow"}]
+tellraw @s ["　 ",{text:" －",color:"dark_red",click_event:{action:"run_command",command:"/function tea_party:setting/role/tellraw/decrease {roleName:'agent'}"}},{text:"  "},{score:{name:"#agent",objective:"tea.use_role"}},{text:"　＋",color:"aqua",click_event:{action:"run_command",command:"/function tea_party:setting/role/tellraw/increase {roleName:'agent'}"}},{text:"　イギリス議会工作員 ",bold:true,italic:true,color:"dark_red"}]
+#tellraw @s ["",{text:" －",color:"dark_red",click_event:{action:"run_command",command:"/function tea_party:setting/role/tellraw/sol_decrease"}},{text:"  "},{score:{name:"#sons_of_liberty",objective:"tea.use_role"}},{text:"　＋",color:"aqua",click_event:{action:"run_command",command:"/function tea_party:setting/role/tellraw/sol_increase"}},{text:"　自由の息子たち: ソンズ・オブ・リバティ",color:"green"}]
+
 
 # 特殊役職数設定
 tellraw @s ["　 ",{text:"特殊役職数設定",bold:true,italic:true,color:"red"}]

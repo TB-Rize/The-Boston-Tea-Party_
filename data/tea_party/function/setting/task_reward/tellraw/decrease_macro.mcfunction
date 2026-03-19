@@ -22,3 +22,5 @@ execute if score #tea_party:setting/task_reward/tellraw/decrease_macro tea.info 
 
 
 scoreboard players set #tea_party:setting/task_reward/tellraw/decrease_macro tea.info -1
+
+# ↑ファイル名を格納先の名前にしているのは頭がおかしいのか！？
