@@ -44,7 +44,7 @@ bossbar remove eleanor
 bossbar remove beaver
 
 # 4秒遅れでtellraw
-schedule function tea_party:game/end/schedule 4s
+schedule function tea_party:game/end/game_summary 4s
 
 # 朝にする
 time set 6000
