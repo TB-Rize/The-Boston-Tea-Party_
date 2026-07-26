@@ -11,6 +11,10 @@ execute store result storage tea_party: tp_tea_bag_id.id int 1 run scoreboard pl
 # 自分にタグ付け
 tag @s add tea.tea_bag_body_temp
 
+# 水に浸かったらジャンプ
+execute at @s if block ~ ~ ~ minecraft:water run data merge entity @s {Motion:[0,1.0,0]}
+
+
 # 変数として用いてtp処理を行う
 function tea_party:entity/tea_bag/movement/tp_macro with storage tea_party: tp_tea_bag_id
 
