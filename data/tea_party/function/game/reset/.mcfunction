@@ -11,6 +11,7 @@ tag @a remove tea.role_sol
 tag @a remove tea.tea_bag_carrying
 tag @a remove tea.role_sol_sp_assigned
 tag @a remove tea.role_agent_sp_assigned
+tag @a remove tea.role_dopagaki
 # スコアボードを再創生
 scoreboard objectives remove tea.role_num
 scoreboard objectives add tea.role_num dummy "紅茶：役職番号"
@@ -35,6 +36,8 @@ scoreboard objectives remove tea.task_id
 scoreboard objectives add tea.task_id dummy "紅茶 : タスク関連処理ID"
 scoreboard objectives remove tea.task_is_carrying
 scoreboard objectives add tea.task_is_carrying dummy "紅茶 : タスク荷物の担ぎ確認"
+scoreboard objectives remove tea.dopagaki_value
+scoreboard objectives add tea.dopagaki_value dummy "紅茶 : ドパ値"
 
 
 # 脱出した船の数をリセットする

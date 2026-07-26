@@ -16,3 +16,6 @@ tag @s add tea.task_guide_temp
 
 # タグを外す
 tag @s remove tea.task_guide_temp
+
+# ドパガキの処理
+function tea_party:role/dopagaki/1sec

@@ -11,6 +11,7 @@
     execute store result score #role_special_agent tea.temp_int run scoreboard players get #special_agent tea.use_role
     execute store result score #role_sam tea.temp_int run scoreboard players get #sam tea.use_role
     execute store result score #role_alter tea.temp_int run scoreboard players get #alter tea.use_role
+    execute store result score #role_dopagaki tea.temp_int run scoreboard players get #dopagaki tea.use_role
 
 # 基礎役職の割り振り
     # 工作員
@@ -35,6 +36,9 @@
     # サンズオブリバティ陣営
     execute unless score #role_sam tea.temp_int matches 0 as @r[tag=tea.role_sol,tag=!tea.role_sol_sp_assigned] run function tea_party:role/assign/sam
 
+    # ドパガキ
+    execute unless score #role_dopagaki tea.temp_int matches 0 as @r[tag=tea.role_sol,tag=!tea.role_sol_sp_assigned] run function tea_party:role/assign/dopagaki
+
 
 
 # 役職割り振りが終わったのでtellrawやtitleを流す
@@ -52,3 +56,6 @@
 
     # オルター id 24
     execute as @a[scores={tea.role_num=24}] run function tea_party:role/assign/tellraw_and_titles/alter
+
+    # ドパガキ id 167
+    execute as @a[scores={tea.role_num=167}] run function tea_party:role/assign/tellraw_and_titles/dopagaki

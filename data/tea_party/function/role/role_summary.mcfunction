@@ -1,4 +1,4 @@
-# tea_party:game/end/role_summary
+# tea_party:role/role_summary
 #
 ## @within tea_party:game/end/game_summary
 
@@ -20,4 +20,7 @@
 
     # サンズオブリバティ
     execute as @r[scores={tea.role_num=101}] run tellraw @a ["　 ",{text:"サンズオブリバティ",bold:true,italic:true,underlined:true,color:"green"},{text:"\n"},{text:"　　"},{selector:"@a[scores={tea.role_num=101}]",bold:true,italic:true,color:"aqua"}]
+
+    # ドパガキ
+    execute as @r[scores={tea.role_num=167}] run tellraw @a ["　 ",{text:"ドパガキ",bold:true,italic:true,underlined:true,color:"gold"},{text:"\n"},{text:"　　"},{selector:"@a[scores={tea.role_num=167}]",bold:true,italic:true,color:"aqua"}]
 

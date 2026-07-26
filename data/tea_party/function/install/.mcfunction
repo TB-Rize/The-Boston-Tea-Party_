@@ -46,6 +46,7 @@ scoreboard objectives add tea.item_is_using dummy "紅茶：使用中"
 scoreboard objectives add tea.item_used dummy "紅茶：使用済み"
 scoreboard objectives add tea.for_1sec dummy "紅茶 : 1秒計測用tick"
 scoreboard objectives add tea.knife_down_time dummy "紅茶 : ナイフを手に持てる時間"
+scoreboard objectives add tea.dopagaki_value dummy "紅茶 : ドパ値"
 
 
 

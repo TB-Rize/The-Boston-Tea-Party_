@@ -11,6 +11,8 @@ $execute as @a[scores={tea_debug.p_num=$(num),tea.role_num=1}] run tellraw @a[ta
 $execute as @a[scores={tea_debug.p_num=$(num),tea.role_num=7}] run tellraw @a[tag=tea.debug_man] ["",{text:"役職 : ",bold:true,italic:true,color:"green"},{text:"特殊工作員",bold:true,italic:true,color:"red"}]
 $execute as @a[scores={tea_debug.p_num=$(num),tea.role_num=101}] run tellraw @a[tag=tea.debug_man] ["",{text:"役職 : ",bold:true,italic:true,color:"green"},{text:"サンズオブリバティ",bold:true,italic:true,color:"aqua"}]
 $execute as @a[scores={tea_debug.p_num=$(num),tea.role_num=124}] run tellraw @a[tag=tea.debug_man] ["",{text:"役職 : ",bold:true,italic:true,color:"green"},{text:"サミュエルアダムズ",bold:true,italic:true,color:"aqua"}]
+$execute as @a[scores={tea_debug.p_num=$(num),tea.role_num=24}] run tellraw @a[tag=tea.debug_man] ["",{text:"役職 : ",bold:true,italic:true,color:"green"},{text:"APEXオルター",bold:true,italic:true,color:"light_purple"}]
+$execute as @a[scores={tea_debug.p_num=$(num),tea.role_num=167}] run tellraw @a[tag=tea.debug_man] ["",{text:"役職 : ",bold:true,italic:true,color:"green"},{text:"ドパガキ",bold:true,italic:true,color:"yellow"}]
 
 
 
