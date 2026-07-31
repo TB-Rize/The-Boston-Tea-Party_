@@ -45,7 +45,7 @@ execute if score #sidebar_time_limit_min tea.time_limit matches 10.. store resul
 
 
 # sidebar表示の上書き
-scoreboard players display name string2 tea.info ["",{text:"制限時間 : ",bold:true,italic:true,color:"white"},{nbt:"sidebar.time_limit.min",storage:"tea_party:",bold:true,italic:true,color:"aqua"},{text:"分",bold:true,italic:true,color:"gray"},{text:" "},{nbt:"sidebar.time_limit.sec",storage:"tea_party:",bold:true,italic:true,color:"aqua"},{text:"秒",bold:true,italic:true,color:"gray"}]
+scoreboard players display name string12 tea.info ["",{text:"制限時間 : ",bold:true,italic:true,color:"white"},{nbt:"sidebar.time_limit.min",storage:"tea_party:",bold:true,italic:true,color:"aqua"},{text:"分",bold:true,italic:true,color:"gray"},{text:" "},{nbt:"sidebar.time_limit.sec",storage:"tea_party:",bold:true,italic:true,color:"aqua"},{text:"秒",bold:true,italic:true,color:"gray"}]
 
 
 

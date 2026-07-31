@@ -40,5 +40,8 @@ execute if score #game_visible_tea_bag_time tea.time_limit matches ..0 run funct
 
 execute if score #game_time_limit tea.time_limit matches 0 run function tea_party:game/end/time_limit
 
+# 常時キルアイテム
+# ドパチェッカーキル
+kill @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{"tea.itemID":"dopaChecker"}}}}]
 # ゲーム終了審査
 function tea_party:game/end/

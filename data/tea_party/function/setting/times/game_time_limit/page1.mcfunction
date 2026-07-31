@@ -32,5 +32,5 @@ tellraw @s ["　 ",{text:"\n"},{text:"　　"},{text:"　←Back　",bold:true,u
 playsound minecraft:ui.button.click master @s ~ ~ ~ 0.3 1.5
 
 # sidebar更新
-scoreboard players display name string2 tea.info ["",{text:"制限時間 : ",bold:true,italic:true,color:"white"},{nbt:"time_limit.min",storage:"tea_party:",bold:true,italic:true,color:"green"},{text:"分",bold:true,italic:true,color:"gray"},{text:" "},{nbt:"time_limit.sec",storage:"tea_party:",bold:true,italic:true,color:"green"},{text:"秒",bold:true,italic:true,color:"gray"}]
-scoreboard players display numberformat string2 tea.info blank
+scoreboard players display name string12 tea.info ["",{text:"制限時間 : ",bold:true,italic:true,color:"white"},{nbt:"time_limit.min",storage:"tea_party:",bold:true,italic:true,color:"green"},{text:"分",bold:true,italic:true,color:"gray"},{text:" "},{nbt:"time_limit.sec",storage:"tea_party:",bold:true,italic:true,color:"green"},{text:"秒",bold:true,italic:true,color:"gray"}]
+scoreboard players display numberformat string12 tea.info blank

@@ -11,6 +11,11 @@ execute unless entity @s[tag=tea.role_dopagaki] run return fail
 # ドパ値を回復する
 scoreboard players set @s[tag=tea.role_dopagaki] tea.dopagaki_value 60
 
-effect give @s minecraft:speed 1 10 true
+# バフを与える
+effect give @s minecraft:speed 5 4 true
 
+# ドパチェッカーを与える
+loot give @s loot tea_party:dopa_checker
+
+# ドパ値が60を超えたのなら60にする
 scoreboard players operation @s tea.dopagaki_value < #60 tea.int

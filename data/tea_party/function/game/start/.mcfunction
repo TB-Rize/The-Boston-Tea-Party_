@@ -64,7 +64,7 @@ function tea_party:game/times/set_time/
 function tea_party:game/ships/ready_bossbar
 
 # サイドバー更新
-function tea_party:game/times/sidebar/start
+function tea_party:game/sidebar/start
 
 # わざわざ2tickぐらい遅らせてミニヒールをする すべてはスコアボード作成時直後から動作しないtea.health_amountのせい
 schedule function tea_party:game/start/mini_heal 2t

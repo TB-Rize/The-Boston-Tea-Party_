@@ -20,6 +20,8 @@ tellraw @s ["　　",{text:"Juicy Steak",bold:true,underlined:true,color:"aqua",
 tellraw @s ["　　",{text:"Knife Scabbard",bold:true,underlined:true,color:"gold",click_event:{action:"run_command",command:"/loot give @s loot tea_party:weapon/scabbard"}}]
 tellraw @s ["　　",{text:"Detective Form",bold:true,underlined:true,color:"aqua",click_event:{action:"run_command",command:"/loot give @s loot tea_party:detective_form"}}]
 tellraw @s ["　　",{text:"Void Nexus",bold:true,underlined:true,color:"light_purple",click_event:{action:"run_command",command:"/loot give @s loot tea_party:other/void_nexus"}}]
+tellraw @s ["　　",{text:"Dopa Checker",bold:true,underlined:true,color:"aqua",click_event:{action:"run_command",command:"/loot give @s loot tea_party:dopa_checker"}}]
+
 
 
 # 元の画面に戻る

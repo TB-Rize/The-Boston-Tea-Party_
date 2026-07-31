@@ -32,11 +32,7 @@ effect clear @a minecraft:resistance
 gamemode creative @a
 
 # サイドバー更新
-scoreboard players reset string1
-scoreboard players display name string1 tea.info ["",{text:"ゲーム : ",bold:true,italic:true,color:"white"},{text:"待機中",bold:true,italic:true,color:"green"}]
-scoreboard players display numberformat string1 tea.info blank
-scoreboard players reset string2
-scoreboard players reset string3
+function tea_party:game/sidebar/reset
 
 # ボスバーをすべて削除
 bossbar remove dartmouth

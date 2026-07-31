@@ -46,7 +46,7 @@ execute if score #sidebar_ready_time_min tea.time_limit matches 10.. store resul
 
 
 # sidebar表示の上書き
-scoreboard players display name string3 tea.info ["",{text:"準備時間 : ",bold:true,italic:true,color:"white"},{nbt:"sidebar.ready_time.min",storage:"tea_party:",bold:true,italic:true,color:"aqua"},{text:"分",bold:true,italic:true,color:"gray"},{text:" "},{nbt:"sidebar.ready_time.sec",storage:"tea_party:",bold:true,italic:true,color:"aqua"},{text:"秒",bold:true,italic:true,color:"gray"}]
+scoreboard players display name string13 tea.info ["",{text:"準備時間 : ",bold:true,italic:true,color:"white"},{nbt:"sidebar.ready_time.min",storage:"tea_party:",bold:true,italic:true,color:"aqua"},{text:"分",bold:true,italic:true,color:"gray"},{text:" "},{nbt:"sidebar.ready_time.sec",storage:"tea_party:",bold:true,italic:true,color:"aqua"},{text:"秒",bold:true,italic:true,color:"gray"}]
 
 
 

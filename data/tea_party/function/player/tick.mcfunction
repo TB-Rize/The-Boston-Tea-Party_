@@ -64,6 +64,9 @@ scoreboard players set @s tea.item_used 0
     #ヴォイドネクサスポータル
     execute if data storage tea_party: itemID{hands:"voidNexusPortal"} if score @s tea.item_is_using matches 1 run function tea_party:item/other/void_nexus_portal/used
 
+    #ドパチェッカー
+    execute if data storage tea_party: itemID{hands:"dopaChecker"} if score @s tea.item_is_using matches 1 run function tea_party:item/other/dopa_checker/used
+
 # 1秒のtick処理
 execute if entity @s[scores={tea.for_1sec=20..}] run function tea_party:player/1sec
 

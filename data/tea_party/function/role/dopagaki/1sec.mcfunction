@@ -14,8 +14,8 @@ scoreboard players remove @s[tag=tea.role_dopagaki] tea.dopagaki_value 1
 # ドパ値が0未満なら以下は不要
 execute if score @s tea.dopagaki_value matches ..-1 run return fail
 
-# ドパ値を表示する
-tellraw @s ["",{text:"現在のドパ値:",bold:true,italic:true,color:"gold"},{score:{name:"@s",objective:"tea.dopagaki_value"},bold:true,italic:true,color:"aqua"}]
+# ドパ値を表示する 改定予定
+#tellraw @s ["",{text:"現在のドパ値:",bold:true,italic:true,color:"gold"},{score:{name:"@s",objective:"tea.dopagaki_value"},bold:true,italic:true,color:"aqua"}]
 
 # ドパ値が0になったときの処理
 execute if score @s tea.dopagaki_value matches 0 run function tea_party:role/dopagaki/zero
