@@ -33,12 +33,16 @@ tellraw @s ["　　",{text:"Stop Game →",bold:true,underlined:true,color:"red"
 # Release ALL
 tellraw @s ["　　",{text:"Drop ALL →",bold:true,underlined:true,color:"red",click_event:{action:"run_command",command:"/function tea_party:debug/release_all"}}]
 
+# Role Summary
+tellraw @s ["　　",{text:"Role Summary →",bold:true,underlined:true,color:"red",click_event:{action:"run_command",command:"/function tea_party:role/role_summary"}}]
+
 # Cheat(未開発)
 tellraw @s ["　　",{text:"Cheat →",bold:true,underlined:true,color:"dark_red",click_event:{action:"run_command",command:"/function tea_party:admin/game"}}]
 
+
+
 # 元の画面に戻る
 tellraw @s ["",{text:"\n"},{text:"　　"},{text:"　←Back　",bold:true,underlined:true,color:"red",click_event:{action:"run_command",command:"/function tea_party:admin/"}}]
-
 
 
 

@@ -2,9 +2,11 @@
 # 全終了処理共通の処理
 #
 
+# ゲーム終了処理
 data modify storage tea_party: Ingame set value 0b
 scoreboard players set #game_time_limit tea.time_limit 0
 scoreboard objectives remove tea.tea_bag_id
+
 # アマスタ処理
 # 名前を見えるようにする
 execute as @e[tag=tea.trader_spawner] at @s run data modify entity @s CustomNameVisible set value 1b

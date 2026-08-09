@@ -5,6 +5,7 @@
 
     # 役職の発表を実際に行う処理
     # ロール関係はroleファイルに集めたほうがよい
+    # デバッグコマンドとしても有用なため、デバッグでもこちらを用いる
 
     # 特殊工作員
     execute as @r[scores={tea.role_num=7}] run tellraw @a ["　 ",{text:"特殊工作員",bold:true,italic:true,underlined:true,color:"red"},{text:"\n"},{text:"　　"},{selector:"@a[scores={tea.role_num=7}]",bold:true,italic:true,color:"aqua"}]

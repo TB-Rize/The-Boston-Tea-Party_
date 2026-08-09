@@ -21,5 +21,6 @@
     execute as @e[tag=tea.trader_setting_allowed] at @s run function tea_party:entity/trader_setting/set_brank
     execute as @e[tag=tea.trader_setting_marker] at @s run function tea_party:entity/trader_setting/death
 
-    # bullet
-    execute as @e[tag=tea.bullet] at @s run function tea_party:entity/bullet/move
+    # 弾丸系統 at @sはこちらにつけない
+    execute as @e[tag=tea.bullet] run function tea_party:entity/bullet/move
+

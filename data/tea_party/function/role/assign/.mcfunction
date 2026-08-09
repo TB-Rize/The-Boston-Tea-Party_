@@ -20,6 +20,9 @@
     # 第三陣営？
     #execute unless score #role_third_party tea.temp_int matches 0 as @r[tag=!tea.role_assigned] run function tea_party:role/assign/????
 
+    # ニュートラル(特殊陣営)
+    #
+
     # サンズオブリバティの割り振り(工作員,第三陣営以外)
     execute as @a[tag=!tea.role_assigned] run function tea_party:role/assign/sons_of_liberty
 
@@ -42,6 +45,8 @@
 
 
 # 役職割り振りが終わったのでtellrawやtitleを流す
+# 既に百の位を除いた値が重複している(1,101),(124,24)を除き、以降の実装では下二桁の重複を避けるようにする
+# ドパガキである167はいずれ67としても扱うことになる
     # 工作員 id 1
     execute as @a[scores={tea.role_num=1}] run function tea_party:role/assign/tellraw_and_titles/agent
 

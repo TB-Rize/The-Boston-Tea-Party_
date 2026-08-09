@@ -7,7 +7,7 @@ function tea_party:item/weapon/muskets/shot/sounds/5t
 
 
 # 弾丸召喚
-execute positioned ~ ~1.4 ~ run summon minecraft:marker ^-0.18 ^0.2 ^0.4 {Tags:["tea.bullet","tea.bullet_uninitted"]}
+execute positioned ~ ~1.4 ~ run summon minecraft:marker ^-0.18 ^0.2 ^0.4 {Tags:["tb.muskets","tea.bullet","tea.bullet_uninitted"]}
 
 # 弾丸に向きを与える(弾丸とは別の目標物を目線150m先に召喚してそれに向かせる)
 summon minecraft:marker ^ ^ ^150 {Tags:["tea.target_point"]}
