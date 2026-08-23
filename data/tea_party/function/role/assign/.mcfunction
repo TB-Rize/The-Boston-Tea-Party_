@@ -1,33 +1,34 @@
 # tea_party:role/assign
-#
+# ロールの割り振りと結果表示を行う 基礎的な割縁を具体的に記述し、それ以外の機能は移譲
 ## @within tea_party:game/start/
 
-    # ロールアサインのためのスコアボードを用意する
-    scoreboard objectives remove tea.temp_int
-    scoreboard objectives add tea.temp_int dummy "紅茶：一時整数"
+
 
     # 役職数を一時的に保存するスコアを一時整数に保存する
-    execute store result score #role_agent tea.temp_int run scoreboard players get #agent tea.use_role
-    execute store result score #role_special_agent tea.temp_int run scoreboard players get #special_agent tea.use_role
-    execute store result score #role_sam tea.temp_int run scoreboard players get #sam tea.use_role
-    execute store result score #role_alter tea.temp_int run scoreboard players get #alter tea.use_role
-    execute store result score #role_dopagaki tea.temp_int run scoreboard players get #dopagaki tea.use_role
+    # ロールの追加ごとに改変が必要
+    function tea_party:role/assign/restore_score
 
 # 基礎役職の割り振り
-    # 工作員
-    execute unless score #role_agent tea.temp_int matches 0 as @r[tag=!tea.role_assigned] run function tea_party:role/assign/agent
-
-    # 第三陣営？
-    #execute unless score #role_third_party tea.temp_int matches 0 as @r[tag=!tea.role_assigned] run function tea_party:role/assign/????
-
     # ニュートラル(特殊陣営)
     #
 
-    # サンズオブリバティの割り振り(工作員,第三陣営以外)
+    # 工作員
+    #ニュートラルの処理によっては、この段階で#role_agent tea.temp_intが0になることもあるが、正常動作とする
+    # 例: ドパガキは確率で工作員陣営になるが、その際、通常工作員の枠を一つ上書きすることになる
+    # メモ: もし、工作員陣営の人数が3、ドパガキが2、オルターが2割り振られたとき、後にアサインが開始されるオルターが１枠消滅する
+    execute unless score #role_agent tea.temp_int matches 0 as @r[tag=!tea.role_assigned] run function tea_party:role/assign/agent
+
+    # 第三陣営？ ニュートラルの一部とする方が自然
+    #execute unless score #role_third_party tea.temp_int matches 0 as @r[tag=!tea.role_assigned] run function tea_party:role/assign/????
+
+
+
+    # サンズオブリバティの割り振り(工作員,ニュートラル以外)
     execute as @a[tag=!tea.role_assigned] run function tea_party:role/assign/sons_of_liberty
 
 # 特殊役職の割り振り
     # 工作員陣営
+    # tea.role_agent_sp_assigned は工作員の特殊役職が割り振られたときに付与されるタグ
     # 特殊工作員
     execute unless score #role_special_agent tea.temp_int matches 0 as @r[tag=tea.role_agent,tag=!tea.role_agent_sp_assigned] run function tea_party:role/assign/special_agent
     # APEXオルター
@@ -37,6 +38,7 @@
     # ????(仮)
 
     # サンズオブリバティ陣営
+    # tea.role_sol_sp_assigned はサンズオブリバティの特殊役職が割り振られたときに付与されるタグ
     execute unless score #role_sam tea.temp_int matches 0 as @r[tag=tea.role_sol,tag=!tea.role_sol_sp_assigned] run function tea_party:role/assign/sam
 
     # ドパガキ
@@ -47,20 +49,12 @@
 # 役職割り振りが終わったのでtellrawやtitleを流す
 # 既に百の位を除いた値が重複している(1,101),(124,24)を除き、以降の実装では下二桁の重複を避けるようにする
 # ドパガキである167はいずれ67としても扱うことになる
+    # ロールの追加ごとに改変が必要
+    function tea_party:role/assign/show_role_result
     # 工作員 id 1
-    execute as @a[scores={tea.role_num=1}] run function tea_party:role/assign/tellraw_and_titles/agent
-
     # サンズオブリバティ id 101
-    execute as @a[scores={tea.role_num=101}] run function tea_party:role/assign/tellraw_and_titles/sons_of_liberty
-
     # 特殊工作員 id 7
-    execute as @a[scores={tea.role_num=7}] run function tea_party:role/assign/tellraw_and_titles/special_agent
-
     # サミュエルアダムズ id 124
-    execute as @a[scores={tea.role_num=124}] run function tea_party:role/assign/tellraw_and_titles/sam
-
     # オルター id 24
-    execute as @a[scores={tea.role_num=24}] run function tea_party:role/assign/tellraw_and_titles/alter
-
     # ドパガキ id 167
-    execute as @a[scores={tea.role_num=167}] run function tea_party:role/assign/tellraw_and_titles/dopagaki
+
